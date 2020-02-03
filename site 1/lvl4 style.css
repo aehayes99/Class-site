@@ -1,0 +1,139 @@
+
+
+
+
+.h1{
+background-color: black;
+  letter-spacing: 5px;
+  width: 400px;
+  height: 14px;
+  border: 5px solid #FFA31E;
+  color: white;
+  text-shadow: 2px 2px orange;
+font-family: abril Fatface;
+font-size: 64px
+}
+.h3{
+  color: white;
+  width: 650px;
+  border: 5px double white;
+  /* justify-content: center; */
+font-family: abril Fatface;
+}
+body{
+
+  background-image: linear-gradient(#D2FCA5,#49583A);
+
+
+}
+strong{
+  letter-spacing: -1px;
+  color: orange;
+  text-shadow: 2px 0px 1px white;
+
+
+
+}
+img{
+  height: 53.7%;
+}
+.box{
+  opacity: 100%;
+
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 25%;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 30%;
+}
+.box:hover {
+  transform: rotateY(180deg);
+}
+.side {
+
+  backface-visibility: hidden;
+  overflow: hidden;
+  width:100%;
+  position: absolute;
+height: 200%;
+
+}
+.back {
+  width:100%;
+background: black;
+  transform: rotateY(180deg);
+
+
+}
+
+
+
+
+
+.container{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+margin-left: 15%;
+  flex-wrap: wrap;
+  height: 900px;
+
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+
+  }
+  @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+.container1{
+  color:white;
+  width: 50%;
+  display: block;
+  justify-content: flex-start;
+  margin-left: 10%;
+  margin-top: 5%;
+  font-family: Inconsolata;
+  perspective: 600;
+
+}
+.container2{
+  color: white;
+  width: 100%;
+  margin-left: 10%;
+
+  display: block;
+  justify-content: flex-start;
+  font-family: Inconsolata;
+}
+.container3{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.container4{
+  width:50%;
+  height: 4%;
+  display: flex;
+justify-content: flex-start;
+text-align: center;
+margin-top: 10%;
+margin-left: 10%
+}
