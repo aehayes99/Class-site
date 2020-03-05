@@ -10,12 +10,47 @@
 
 
   <body>
+    <Div class = 'svg'>
+  <h2>SVG: Fractal Noise</h2>
+<svg viewBox="0 0 200 200" width="200px" height="200px">
+    <defs>
+        <filter id="feDisplacementMap"
+        	filterUnits="userSpaceOnUse" x="0" y="0" width="300" height="300">
+            <feTurbulence type="fractalNoise" baseFrequency="0.995" numOctaves="1" seed="1" stitchTiles="noStitch" result="img"/>
+            <feDisplacementMap in="SourceGraphic" in2="img" xChannelSelector="R" yChannelSelector="G" scale="500">
+                <animate attributeName="scale"
+                	values="600;0;0" keyTimes="0;0.75;1" begin="0s" dur="12s" repeatCount="indefinite"/>
+            </feDisplacementMap>
+        </filter>
+    </defs>
+    <g filter="url(#feDisplacementMap)">
+        <div class="box"></div>
+    </g>
+</svg>
+  </div>
+    <!-- <svg viewBox="0 0 200 200" width="200px" height="200px">
+    <defs>
+        <filter id="feDisplacementMap"
+        	filterUnits="userSpaceOnUse" x="0" y="0" width="300" height="300">
+            <feTurbulence type="fractalNoise" baseFrequency="0.995" numOctaves="1" seed="1" stitchTiles="noStitch" result="img"/>
+            <feDisplacementMap in="SourceGraphic" in2="img" xChannelSelector="R" yChannelSelector="G" scale="500">
+                <animate attributeName="scale"
+                	values="600;0;0" keyTimes="0;0.75;1" begin="0s" dur="12s" repeatCount="indefinite"/>
+            </feDisplacementMap>
+        </filter>
+    </defs>
+    <g filter="url(#feDisplacementMap)">
+      <div class="box"></div>
+    </g>
+  </svg> -->
     <ul>
       <li><a href="article/index.html"> Article Project</a> </li>
       <li><a href="reading%20response/index.html"> Reading Response</a></li>
       <li><a href="poems/index.html"> Poems</a></li>
       <li><a href="for%20the%20class%20site/index.html"> Animation Sketch</a></li>
+      <li><a href="story%20copy/index.html">Story</a></li>
     </ul>
+
 
     <div class="container">
         <div class="heading-font">Ashley<br>Hayes

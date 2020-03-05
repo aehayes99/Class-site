@@ -21,6 +21,34 @@ body{
         background-position: 0% 50%;
     }
 }
+.svg{
+  width:100%;
+  height:50%;
+  text-align:center;
+  margin-top:5em;
+}
+svg{
+  max-width:100%;
+}
+.box{
+  background: linear-gradient(180deg,#DAF7A6,#FFC300,#FF5733,#C70039,#900C3F,#581845  );
+    animation: gradient2 20s infinite;
+}
+
+
+
+@keyframes gradient2 {
+  0% {
+      background-position: 50% 0%;
+  }
+  50% {
+      background-position: 50% 100%;
+  }
+  100% {
+      background-position: 50% 0%;
+  }
+
+}
 .header-box{
   width: 80%;
   height:20%;
